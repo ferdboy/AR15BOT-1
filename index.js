@@ -35,10 +35,10 @@ const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
             + 'VERSION:3.0\n' // NGAPAIN LAGI KALO GA MAU NUMPANG NAMA DOANG XIXIXIXI
-            + 'FN:Aris🖤\n' // MENDING LU TOBAT SU!
-            + 'ORG:Creator AR15BOT;\n' // KASIH CREDITS GUA SU!!!
-            + 'TEL;type=CELL;type=VOICE;waid=6285722553839:+62 857-2255-3839\n' // JANGAN KEK BABI SU
-            + 'END:VCARD' // ARIS187 ID
+            + 'FN:Ferdi♥️\n' // MENDING LU TOBAT SU!
+            + 'ORG:Creator F4S BOT;\n' // KASIH CREDITS GUA SU!!!
+            + 'TEL;type=CELL;type=VOICE;waid=6282169369877:+62 821-6936-9877\n' // JANGAN KEK BABI SU
+            + 'END:VCARD' // F4 SAPUTRA
 prefix = '!'
 blocked = []            
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
@@ -47,10 +47,10 @@ const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Jul
 const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
-    A187: '👾AR15BOT👾', // TOBAT SU ASU
-    instagram: 'https://instagram.com/_sadboy.ig', // INFO JANGAN DI UBAH
-    nomer: 'wa.me/6285722553839', // INFO SU JNGAN DI UBAH
-    youtube: 'https://youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg', // KINTIL
+    A187: '👾F4SBOT👾', // TOBAT SU ASU
+    instagram: 'https://instagram.com/ferdi_ardian21', // INFO JANGAN DI UBAH
+    nomer: 'wa.me/6282169369877', // INFO SU JNGAN DI UBAH
+    youtube: 'NOTHING', // KINTIL
     whatsapp: 'https://chat.whatsapp.com/DSSHmG2KjKJLoFp9B9mkVs', // BABI
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
@@ -168,7 +168,7 @@ client.on('group-participants-update', async (anu) => {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["6285722553839@s.whatsapp.net"] // ganti nomer lu
+			const ownerNumber = ["6282169369877@s.whatsapp.net"] // ganti nomer lu
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -493,7 +493,7 @@ client.on('group-participants-update', async (anu) => {
 					break
 				case 'fitnah':	
 				case 'fake': // tuh costum reply
-              costum('Ini', '6285722553839@s.whatsapp.com')
+              costum('Ini', '6282169369877@s.whatsapp.com')
                   break	
                  case 'linkgc':	 
                 if (!isGroup) return reply(mess.only.group)
